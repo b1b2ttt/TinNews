@@ -1,12 +1,10 @@
 package com.willa.tinnews;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.content.Intent;
-import android.view.View;
-import android.widget.TextView;
-
-
+     import android.content.Intent;
+     import android.support.v7.app.AppCompatActivity;
+     import android.os.Bundle;
+     import android.view.View;
+     import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        android1 10-1
         TextView view = findViewById(R.id.text);
         view.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,4 +21,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
 }
+
